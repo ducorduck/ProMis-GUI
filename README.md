@@ -9,7 +9,13 @@ The project is based on React.js and Leaflet.
 ### Requirements
 
 [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) is required for using the npm package manager.\
-[Python > 3.9](https://www.python.org/downloads/) is required for the backend
+[Python > 3.9](https://www.python.org/downloads/) is required for the backend.\
+[ProMis](https://github.com/HRI-EU/ProMis) for Probabilistic Mission Design.\
+[FastAPI](https://fastapi.tiangolo.com/) for the backend server.
+
+You can then start the backend server with:
+
+### `fastapi dev ./backend/main.py`
 
 In the frontend project directory, you can run:
 
