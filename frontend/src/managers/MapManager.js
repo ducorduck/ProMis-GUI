@@ -349,7 +349,6 @@ class MapManager {
                 marker.probability,
                 marker.position[0],
                 marker.position[1],
-                marker.index.toString(),
               );
               // Add feature properties to marker
               var feature = (createdMarker.feature =
@@ -388,7 +387,7 @@ class MapManager {
    * @param {*} lng
    * @returns
    */
-  addPopup(elem, val, lat, lng, index) {
+  addPopup(elem, val, lat, lng) {
     // specify popup options
     var customOptions = {
       color: "red",
@@ -397,7 +396,7 @@ class MapManager {
     };
 
     elem.bindPopup(
-      "Val: " + val + "<br>" + "Lat: " + lat + "<br>" + "Lng: " + lng + "<br>" + "Index: " + index,
+      "Val: " + val + "<br>" + "Lat: " + lat + "<br>" + "Lng: " + lng + "<br>",
       customOptions,
     );
     return elem;
